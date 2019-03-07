@@ -1,0 +1,11 @@
+<a href="/">Home</a>
+
+<h1><%= @song.title %></h1>
+<h4>By: <%= @song.artist %></h4>
+<h4>Length: <%= @song.length %></h4>
+
+<div>
+  <% @song.lyric_lines.each do |line| %>
+    <p><%= line %></p>
+  <% end %>
+</div>
